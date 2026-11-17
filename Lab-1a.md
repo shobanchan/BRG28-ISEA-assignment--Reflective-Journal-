@@ -101,15 +101,15 @@ Think of VirtualBox as software that allows you to run another computer inside y
 ### Screenshot 8: General Config
 ![General Config](screenshots/General%20Config.png)
 
-### Screenshot 3: Storage Config
+### Screenshot 9: Storage Config
 ![Storage Config](screenshots/Storage%20Config.png)
 
-### Screenshot 4: System Config
+### Screenshot 10: System Config
 ![System Config](screenshots/System%Config.png)
 
 
 
-# Day 1a : Introduction to Ubuntu Linux (Part 2) 
+# Day 1a : Familiarity with Ubuntu Linux – Basic command line navigation and utilities.  
 
 ## Lab Objectives
 The objective is to r
