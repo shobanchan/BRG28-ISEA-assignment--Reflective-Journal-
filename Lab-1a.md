@@ -23,7 +23,7 @@ Being new to GitHub, i didn't understand what is the function of GitHub and the 
 I observed the function of "markdown" and usage for formatting documentation. For example, the # symbol creates headings, while hyphens can be used to create bullet points.
 "Commit" records changes through commit, allowing users to review the development of the project.
 I learned the difference between Git and GitHub. Git is a version-control tool that tracks changes locally, while GitHub hosts repositories online.
-I also learned that cloning creates a local copy of a repository, allowing me to work on project files directly from my laptop. Furthermore, as i continue working on GitHub online - git pull- will save my progress locally. 
+I also learned that cloning creates a local copy of a repository, allowing me to work on project files directly from my laptop. Furthermore, as i continue working on GitHub online, using the - git pull- command on cmd will save my progress locally. 
 
 ## Challenges Encounterd
 
@@ -47,6 +47,13 @@ This activity helped me understand how it can serve as a platform for recording 
 
 ### Screenshot 3: First Commit
 ![First Commit](screenshots/Commit%10Changes.png)
+
+### Screenshot 4: Git Installation
+![Install GIT](screenshots/Install%10Git%10Changes.png)
+
+### Screenshot 4: Git Clone
+![Git Clone](screenshots/Git%10Clone%10Changes.png)
+
 
 
 
