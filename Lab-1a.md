@@ -49,10 +49,10 @@ This activity helped me understand how it can serve as a platform for recording 
 ![First Commit](screenshots/Commit%10Changes.png)
 
 ### Screenshot 4: Git Installation
-![Install GIT](screenshots/Install%10Git%10Changes.png)
+![Install GIT](screenshots/Install%10Git%10.png)
 
 ### Screenshot 4: Git Clone
-![Git Clone](screenshots/Git%10Clone%10Changes.png)
+![Git Clone](screenshots/Git%10Clone%10.png)
 
 
 
