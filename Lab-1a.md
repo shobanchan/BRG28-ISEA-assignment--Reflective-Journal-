@@ -1,16 +1,16 @@
 # Day 1a : Introduction to GitHub
-##Lab Ojective
+## Lab Ojective
 
 The objective of this activity was to become familiar with GitHub and understand how repositories can be used to document laboratory activities, track changes, and record learning progress.
 
-##Activites Performed
+## Activites Performed
 
 I accessed Github.com and created am account. From there , i created a repository named BRG28-ISEA-assignment--Reflective-Journal-.
 i then created a README.md file using GitHub's online editor. 
 An introduction to my repository, a summary of my lab activities, and my learning objectives are all included in the file.
 I made my first commit after making adjustments to the README file.
 
-##Observation 
+## Observation 
 
 Being new to GitHub, i didn't understand what is the function of GitHub and the relantionship between Git and GitHub. Everything was foriegn to me. With the help of Youtube and Chatpgt , i understood the functionality of GitHUb.
 I observed the function of "markdown" and usage for formatting documentation. For example, the # symbol creates headings, while hyphens can be used to create bullet points.
