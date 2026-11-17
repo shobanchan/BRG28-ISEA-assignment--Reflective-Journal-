@@ -96,7 +96,7 @@ Think of VirtualBox as software that allows you to run another computer inside y
 ## Evidence
 
 ### Screenshot 7: ISO Link
-![ISO Link](screenshots/ISO%20Link%20.png)
+![ISO Link](screenshots/ISO%20link%20.png)
 
 ### Screenshot 8: General Config
 ![General Config](screenshots/General%20Config.png)
@@ -105,7 +105,7 @@ Think of VirtualBox as software that allows you to run another computer inside y
 ![Storage Config](screenshots/Storage%20Config.png)
 
 ### Screenshot 10: System Config
-![System Config](screenshots/System%Config.png)
+![System Config](screenshots/System%20Config.png)
 
 
 
