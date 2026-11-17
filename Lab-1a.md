@@ -27,7 +27,16 @@ Through this activity, I began to understand the difference between GitHub, repo
 
 This activity helped me understand how it can serve as a platform for recording my laboratory experiences and developing a portfolio of technical projects which can benefit me in the near future.
 
+## Evidence
 
+### Screenshot 1: GitHub Repository Creation
+![GitHub Repository](screenshots/GitHub%20Repository%20Creation.png)
+
+### Screenshot 2: README File
+![README](screenshots/Readme.png)
+
+### Screenshot 3: First Commit
+![First Commit](screenshots/Commit%20Changes.png)
 
 
 
