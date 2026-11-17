@@ -1,6 +1,6 @@
 # Day 1a : Introduction to GitHub
-## Lab Ojective
 
+## Lab Ojective
 The objective of this activity was to become familiar with GitHub and understand how repositories can be used to document laboratory activities, track changes, and record learning progress.
 
 ## Activites Performed
@@ -93,7 +93,26 @@ Think of VirtualBox as software that allows you to run another computer inside y
 - ISO file: A virtual installation disc containing the Ubuntu installer.
 
 
-  
+## Evidence
+
+### Screenshot 7: ISO Link
+![ISO Link](screenshots/ISO%20Link%20.png)
+
+### Screenshot 8: General Config
+![General Config](screenshots/General%20Config.png)
+
+### Screenshot 3: Storage Config
+![Storage Config](screenshots/Storage%20Config.png)
+
+### Screenshot 4: System Config
+![System Config](screenshots/System%Config.png)
+
+
+
+# Day 1a : Introduction to Ubuntu Linux (Part 2) 
+
+## Lab Objectives
+The objective is to r
 
  
 
