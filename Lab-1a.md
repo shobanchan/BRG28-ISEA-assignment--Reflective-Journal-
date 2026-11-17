@@ -40,19 +40,22 @@ This activity helped me understand how it can serve as a platform for recording 
 ## Evidence
 
 ### Screenshot 1: GitHub Repository Creation
-![GitHub Repository](screenshots/GitHub%20Repository%10Creation.png)
+![GitHub Repository](screenshots/GitHub%20Repository%20Creation.png)
 
 ### Screenshot 2: README File
 ![README](screenshots/Readme.png)
 
 ### Screenshot 3: First Commit
-![First Commit](screenshots/Commit%10Changes.png)
+![First Commit](screenshots/Commit%20Changes.png)
 
 ### Screenshot 4: Git Installation
-![Install GIT](screenshots/Install%10Git%10.png)
+![Install Git](screenshots/Install%20GIT.png)
 
-### Screenshot 4: Git Clone
-![Git Clone](screenshots/Git%10Clone%10.png)
+### Screenshot 5: Git Clone
+![Git Clone](screenshots/Git%20Clone.png)
+
+### Screenshot 6: Git Version Verification
+![Git Version](screenshots/GIT%20version.png)
 
 
 
