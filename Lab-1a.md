@@ -96,12 +96,12 @@ Think of VirtualBox as software that allows you to run another computer inside y
 ## Evidence
 
 ### Screenshot 7: ISO Link
-![ISO Link](screenshots/ISO%20link%20.png)
+![ISO Link](screenshots/ISO%20link.png)
 
 ### Screenshot 8: General Config
 ![General Config](screenshots/General%20Config.png)
 
-### Screenshot 9: Storage Config
+### Screenshot 9: Storage Configuration
 ![Storage Config](screenshots/Storage%20Config.png)
 
 ### Screenshot 10: System Config
