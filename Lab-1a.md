@@ -58,47 +58,40 @@ This activity helped me understand how it can serve as a platform for recording 
 ![Git Version](screenshots/GIT%20version.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Day 1a : Introduction to Ubuntu Linux
 
 ## Lab Objectives
 The ojective was to install a VM plus Unbuntu Linux in a virtual environment and become familiar with the Linux operating system. 
 
 ## Activites Performed
-1) Download Ubuntu ISO
+1) Download Ubuntu ISIO
 2) Install VirtualBox and create a new virtual machine.
 3) Configure VM settings
 4) Mount ISO and install Ubuntu through guided installer
 
 ## Challenges Encountered
-Orginally 
-##Observations
+i didn't face much challenges from this part of the installation as I've created a Virtual Machine previously but the main challenge, I encountered during this lab was understanding the purpose of the Ubuntu ISO file. Initially, I was unsure why I needed to download an ISO file when I had already installed Oracle VirtualBox.
+I later understood that VirtualBox provides the virtual hardware environment, whereas the Ubuntu ISO contains the files needed to install the operating system. 
 
-##What I learned
+## Observations
+Virtualization: I observed that Oracle VirtualBox allowed me to install and run Ubuntu Linux within my Windows laptop without replacing my existing operating system.
+Resource allocation: While creating the virtual machine, I noticed that I had to allocate hardware resources such as RAM, CPU cores and storage. This helped me recognize that a virtual machine uses resources from the physical computer.
+ISO installation: I observed that the Ubuntu ISO file was used as the installation medium for the virtual machine, similar to how a bootable USB drive is used to install an operating system on a physical computer.
+Operating system independence: After installing Ubuntu, I could operate Linux within VirtualBox while Windows continued running as my main operating system.
+Virtual machine configuration: I noticed that VirtualBox provided settings to configure the virtual machine's hardware without physically modifying my laptop. Understanding in layman's term that an ISO is basically a digital installation DVD. It contains the installation files for Ubuntu. Hence the ISO is the boot content to "image" my virtual machine.
 
-##Screenshots and Evidence
+-Before installation: The ISO provides the Ubuntu installation files.
+-During installation: Ubuntu is installed onto the VM's virtual hard disk.
+-After installation: Ubuntu boots directly from the virtual hard disk.
+
+## What I learned
+To grasp the concept of Virtual Machine, i needed to know the skeleton behind this. The link between my physical laptop to Oracle VirtualBox to Ubuntu Virtual Machine. 
+Think of VirtualBox as software that allows you to run another computer inside your existing computer.
+- VirtualBox: Creates and runs virtual machines.
+- Virtual Machine (VM): A simulated computer with its own allocated RAM, processors and storage.
+- Ubuntu: The operating system installed inside the VM.
+- ISO file: A virtual installation disc containing the Ubuntu installer.
+
 
   
 
