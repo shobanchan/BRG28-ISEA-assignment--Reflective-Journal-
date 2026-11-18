@@ -173,3 +173,15 @@ I also observed that /home stores personal user files, /etc contains system conf
 ## What I learned
 
 Through this lab, I learned how to navigate the Ubuntu file system using basic Linux commands such as pwd, ls and cd. I also learned how to create directories and files using mkdir and touch. Additionally, I gained a better understanding of the purpose of Linux directories such as /home, /etc and /var/log. Overall, this activity helped me become more familiar with the Linux terminal and understand how files and directories are managed without using a graphical interface.
+
+## Evidence
+
+### Screenshot 11: Basic Commands
+![Basic Commands](screenshots/Basic%20Commands.png)
+
+### Screenshot 12: manual
+![manual](screenshots/manual.png)
+
+### Screenshot 13: Storage Configuration
+![var](screenshots/var.png)
+
