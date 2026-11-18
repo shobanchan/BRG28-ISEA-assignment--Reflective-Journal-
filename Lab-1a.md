@@ -112,27 +112,64 @@ Think of VirtualBox as software that allows you to run another computer inside y
 # Day 1a : Familiarity with Ubuntu Linux – Basic command line navigation and utilities.  
 
 ## Lab Objectives
-The objective is to r
+The objective is to run basic Linux command and see the result of that command executed. 
 
- 
+## Activities Performed
+1) Practice using `pwd`, `ls`, `cd`, `mkdir`, and `touch`. 
+2) Understand directory structure (`/etc`, `/var`, `/home`). 
+3) Use `man` to explore Linux manual pages.
 
- 
+## Challenges Faced
 
- 
+While running sudo apt install, i faced this error "404 Not Found"
+Error: The repository 'http://sg.archive.ubuntu.com/ubuntu resolute Release' no longer has a Release file. I couldn't do anything about it. Sudo apt clean didn't manage solve the issue.
+With the help of chatgpt and Stackflow forum, i got find out that a repository configuration problem. It may be pointing to an Ubuntu release that is no longer supported, or your repository settings may be incorrect.
 
+i needed to edit the main repository http://sg.archive.ubuntu.com/ubuntu/ ---->  http://archive.ubuntu.com/ubuntu/
+By running this command first - sudo nano /etc/apt/sources.list.d/ubuntu.sources
+which will show me
 
+Types: deb
+URIs: http://sg.archive.ubuntu.com/ubuntu/
+Suites: resolute resolute-updates resolute-backports
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
+## Observations
 
+During this lab, I observed that Ubuntu allows users to navigate directories and manage files through the terminal without relying on a graphical interface.
 
+Commands Practised:
 
+pwd
+ls
+cd Documents
+cd
+mkdir LinuxLab
+cd LinuxLab
+touch notes.txt
+ls
+pwd
 
+I observed that pwd displayed my current directory as /home/shobanchan, while ls listed the available files and folders. The cd command allowed me to navigate between directories, mkdir was used to create a folder, and touch was used to create an empty text file.
 
+Additional Commands Covered – Linux File System:
 
+cd /etc
+pwd
+ls
 
+cd /var
+pwd
+ls
 
+cd ~
+pwd
 
+man ls
 
-  
+I also observed that /home stores personal user files, /etc contains system configuration files, and /var/log commonly stores system and application logs. The man command provides documentation for Linux commands.
 
+## What I learned
 
- 
+Through this lab, I learned how to navigate the Ubuntu file system using basic Linux commands such as pwd, ls and cd. I also learned how to create directories and files using mkdir and touch. Additionally, I gained a better understanding of the purpose of Linux directories such as /home, /etc and /var/log. Overall, this activity helped me become more familiar with the Linux terminal and understand how files and directories are managed without using a graphical interface.
