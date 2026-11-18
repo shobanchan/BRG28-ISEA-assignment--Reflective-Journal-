@@ -179,9 +179,9 @@ Through this lab, I learned how to navigate the Ubuntu file system using basic L
 ### Screenshot 11: Basic Commands
 ![Basic Commands](screenshots/Basic%20Commands.png)
 
-### Screenshot 12: manual
+### Screenshot 12: Manual
 ![manual](screenshots/manual.png)
 
-### Screenshot 13: Storage Configuration
+### Screenshot 13: Var
 ![var](screenshots/var.png)
 
