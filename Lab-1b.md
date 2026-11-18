@@ -44,11 +44,15 @@ I learned how Linux manages background processes and how system administrators c
 
 ### Evidence
 
-#### Screenshot 1: Linux Services
-![Linux Services](screenshots/Linux%20Services.png)
+#### Screenshot 1: Listing Linux Services
+![Cron Service](screenshots/Cron.png)
 
-#### Screenshot 2: Managing Services
-![Managing Services](screenshots/Managing%20Services.png)
+#### Screenshot 2: Stopping the Cron Service
+![Inactive Cron](screenshots/inactive-cron.png)
+
+#### Screenshot 3: Restarting the Cron Service
+![Resume Cron](screenshots/Resume%20Cron.png)
+
 
 ---
 
@@ -189,17 +193,21 @@ Overall, this activity improved my confidence in using Linux commands and unders
 
 ### Evidence
 
-#### Screenshot 3: Linux File Permissions
-![Linux Permissions](screenshots/Linux%20Permissions.png)
 
-#### Screenshot 4: Changing File Ownership
-![File Ownership](screenshots/File%20Ownership.png)
+### Evidence
 
-#### Screenshot 5: Find Command
-![Find Command](screenshots/Find%20Command.png)
+#### Screenshot 4: Viewing File Permissions
+![File Permissions](screenshots/File%20Permission.png)
 
-#### Screenshot 6: Grep Command
-![Grep Command](screenshots/Grep%20Command.png)
+#### Screenshot 5: Changing File Ownership
+![Chown](screenshots/chown.png)
 
-#### Screenshot 7: Troubleshooting Errors
-![Troubleshooting](screenshots/Troubleshooting%20Errors.png)
+#### Screenshot 6: Exploring File Ownership
+![Chown 2](screenshots/chown2.png)
+
+#### Screenshot 7: Searching Files Using Find
+![Find](screenshots/find.png)
+
+#### Screenshot 8: Searching File Contents Using Grep
+![Grep](screenshots/grep.png)
+
