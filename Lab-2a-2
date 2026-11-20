@@ -197,13 +197,57 @@ This helped me understand the difference between HTML content and CSS presentati
 
 ## Screenshots
 
-Add screenshots showing:
+## Screenshots and Evidence
 
-1. Azure VM overview and running status.
-2. Successful SSH login from PowerShell.
-3. Apache service status showing `active (running)`.
-4. Apache default webpage.
-5. Custom HTML webpage displayed in the browser.
+### Screenshot 1: Azure Virtual Machine Configuration
+
+The screenshot shows the configuration of my Azure Ubuntu virtual machine, including its operating system, resource group, public IP address, and virtual network settings.
+
+![Azure VM Configuration](Azure%20VM%20setting.png)
+
+### Screenshot 2: Azure Ubuntu Virtual Machine
+
+This screenshot shows my Ubuntu virtual machine deployed on Microsoft Azure. I used this environment to complete the Apache web server lab.
+
+![Azure Ubuntu VM](Azure%20Ubuntu.png)
+
+### Screenshot 3: Apache Service Status
+
+I used `sudo systemctl status apache2` to verify that the Apache web server was running successfully.
+
+The service displayed `active (running)`.
+
+![Apache Service Status](Status.png)
+
+### Screenshot 4: Apache Default Webpage
+
+After verifying the Apache service, I entered the virtual machine's public IP address into my web browser.
+
+The Apache2 Ubuntu Default Page loaded successfully, confirming that the web server was accessible through HTTP.
+
+![Apache Default Page](Apache2%20Default%20Pge.png)
+
+### Screenshot 5: Apache Website Directory
+
+I used the following command to examine the default Apache website directory:
+
+```bash
+ls /var/www/html
+```
+
+The directory contained `index.html`, which is the default webpage served by Apache.
+
+![Apache Website Directory](website%20directory.png)
+
+### Screenshot 6: Modified Apache Webpage
+
+I edited `/var/www/html/index.html` using the Nano text editor and replaced the default Apache webpage with my own HTML content.
+
+After saving the changes and refreshing my browser, the updated webpage appeared successfully.
+
+![Modified Apache Webpage](Edit%20of%20apache%20page.png)
+
+
 
 ## Conclusion
 
