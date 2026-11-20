@@ -1,0 +1,217 @@
+
+# Lab 2a-2: Deploying an Apache Web Server on a Cloud Virtual Machine
+
+## Objective
+
+The objective of this lab was to deploy a Linux virtual machine in a cloud environment, configure network access, install and manage Apache, and verify that a webpage could be accessed through a public IP address.
+
+I initially attempted the lab using AWS EC2 before switching to Microsoft Azure, which was also permitted for the assignment.
+
+## Environment and Tools
+
+- AWS EC2 (initial attempt)
+- Microsoft Azure Virtual Machines (completed deployment)
+- Ubuntu Server 24.04 LTS
+- Apache2 HTTP Server
+- Windows PowerShell and SSH
+- Azure Network Security Group (NSG)
+- Nano text editor
+- Web browser
+
+## Part 1: Initial AWS EC2 Deployment
+
+I created an AWS account and launched an EC2 instance in the Sydney region. I configured a security group with SSH on TCP port 22 restricted to My IP and HTTP on TCP port 80 accessible from anywhere (`0.0.0.0/0`).
+
+I attempted to connect through browser-based EC2 Instance Connect but received an SSH connection error.
+
+To investigate, I checked the instance status, public IPv4 address, security group rules, subnet, route table, Internet Gateway and Network ACL.
+
+The instance was running, and the network configuration showed an Internet Gateway route and permissive Network ACL rules.
+
+I then attempted SSH through Windows PowerShell. An authentication error led me to check the AMI name.
+
+I discovered that I had selected **Amazon Linux 2023 rather than Ubuntu**.
+
+Amazon Linux uses the default username `ec2-user`, whereas Ubuntu commonly uses `ubuntu`.
+
+Using `ec2-user` allowed me to connect to the original Amazon Linux instance.
+
+I subsequently attempted a new Ubuntu deployment and experimented with a new SSH key pair. However, browser-based SSH connectivity remained unresolved.
+
+As Azure was permitted for this assignment, I decided to continue using my existing Azure Ubuntu virtual machine.
+
+## Part 2: Azure Virtual Machine
+
+I reused an existing Azure virtual machine with the following configuration:
+
+| Property | Configuration |
+|---|---|
+| VM name | Ubuntu-Apache-VM |
+| Resource group | RG-Ubuntu-Lab |
+| Operating system | Ubuntu 24.04 LTS |
+| Region | South Africa North |
+| VM size | Standard B2ats v2 |
+| CPU | 2 vCPUs |
+| Memory | 1 GiB |
+| Public IPv4 | 4.222.184.45 |
+| Private IPv4 | 172.16.0.4 |
+
+## Part 3: Connecting Through SSH
+
+I verified that Azure allowed SSH access on TCP port 22.
+
+I located the private key downloaded when the VM was created and used Windows PowerShell to connect.
+
+```powershell
+cd "$HOME\Downloads"
+ssh -i ".\Ubuntu-Apache-VM_key.pem" azureuser@4.222.184.45
+```
+
+The Ubuntu welcome message and the `azureuser@Ubuntu-Apache-VM:~$` prompt confirmed that I had connected to the remote Linux virtual machine.
+
+## Part 4: Verifying Apache
+
+The Apache web server was already installed on my existing Azure VM.
+
+I verified its status using:
+
+```bash
+sudo systemctl status apache2
+```
+
+The result displayed `active (running)`, confirming that Apache was operating as a Linux service.
+
+I also opened the VM public IP address in a browser:
+
+```text
+http://4.222.184.45
+```
+
+The Apache default page loaded successfully, confirming that the server was reachable through HTTP on port 80.
+
+## Part 5: Exploring and Editing the Webpage
+
+I listed the default Apache website directory:
+
+```bash
+ls /var/www/html
+```
+
+The directory contained `index.html`.
+
+I examined the file using:
+
+```bash
+cat /var/www/html/index.html
+```
+
+I opened the file for editing:
+
+```bash
+sudo nano /var/www/html/index.html
+```
+
+I replaced the default page with the following HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Azure Apache Lab</title>
+</head>
+<body>
+    <h1>Hello from Azure Ubuntu Apache!</h1>
+    <p>Lab 2a-2 completed successfully.</p>
+    <p>This website is hosted on my Azure virtual machine.</p>
+</body>
+</html>
+```
+
+I saved the file using `Ctrl+O`, confirmed with Enter, and exited Nano using `Ctrl+X`.
+
+After refreshing the browser, my custom webpage appeared successfully.
+
+## Challenges Encountered
+
+### Challenge 1: Incorrect AWS Operating System
+
+I initially selected Amazon Linux 2023 instead of Ubuntu Server.
+
+I attempted to connect using the `ubuntu` username and received a `Permission denied` error.
+
+After checking the AMI name, I identified the operating system mismatch. Using `ec2-user` allowed me to connect to the original instance.
+
+This taught me that Linux distributions can have different default SSH usernames and package managers.
+
+### Challenge 2: AWS Browser-Based SSH Connection Failure
+
+EC2 Instance Connect repeatedly displayed an error establishing an SSH connection.
+
+I investigated the security group, public IP, VPC, subnet, Internet Gateway, route table and Network ACL.
+
+I learned that an EC2 instance can be running and pass its health checks while remote access still fails.
+
+I also learned that browser-based EC2 Instance Connect and direct SSH from PowerShell can have different network access requirements.
+
+The browser connection issue was not conclusively resolved.
+
+### Challenge 3: SSH Command and Key File Errors
+
+While troubleshooting AWS, I encountered `Permission denied (publickey)` and hostname resolution errors.
+
+I learned that the username, destination IP address and private key must all be correct.
+
+I also encountered a missing private key file warning and learned to check the current directory and key filename before attempting SSH.
+
+### Challenge 4: Understanding Cloud Networking
+
+Initially, I found it difficult to understand the relationship between a VPC, subnet, route table, Internet Gateway, Security Group and Network ACL.
+
+Investigating each component helped me understand that a public IP alone does not guarantee connectivity.
+
+Network routing and firewall permissions also need to be configured correctly.
+
+### Challenge 5: Editing HTML in Nano
+
+The original Apache `index.html` contained a large amount of HTML and CSS.
+
+I was initially unsure which sections to remove.
+
+I replaced the original contents with a simpler HTML page and successfully displayed my custom message.
+
+I noticed that the original colours and formatting disappeared because the replacement page did not include CSS.
+
+This helped me understand the difference between HTML content and CSS presentation.
+
+## Key Learning Outcomes
+
+- Understood the purpose of cloud-hosted Linux virtual machines.
+- Learned the difference between Amazon Linux and Ubuntu.
+- Practised SSH authentication using a private key.
+- Understood the roles of public and private IP addresses.
+- Investigated cloud routing and firewall configurations.
+- Verified Apache using `systemctl`.
+- Located and edited the default Apache webpage.
+- Learned how HTML and CSS affect webpage content and appearance.
+- Successfully accessed a custom webpage hosted on Azure through a public IP address.
+
+## Screenshots
+
+Add screenshots showing:
+
+1. Azure VM overview and running status.
+2. Successful SSH login from PowerShell.
+3. Apache service status showing `active (running)`.
+4. Apache default webpage.
+5. Custom HTML webpage displayed in the browser.
+
+## Conclusion
+
+This lab helped me understand how cloud virtual machines, SSH, network security and web servers work together.
+
+Although my initial AWS deployment involved several SSH and operating system configuration challenges, troubleshooting those issues improved my understanding of cloud networking and remote administration.
+
+I completed the practical web hosting exercise using Microsoft Azure, where I verified Apache and successfully modified and accessed my own HTML webpage.
+
+The experience reinforced the importance of checking the operating system, authentication credentials, network rules and service status when troubleshooting cloud environments.
+
