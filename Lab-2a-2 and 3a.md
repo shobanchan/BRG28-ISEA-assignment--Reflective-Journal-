@@ -741,7 +741,7 @@ This screenshot shows my Apache webpage accessed through the DuckDNS hostname.
 
 This screenshot shows the certificate issued for the DuckDNS hostname.
 
-![Let's Encrypt Certificate](3a1-certbot.png)
+![Apache Domain Access](./screenshots/Cert%20Issued%20by.png)
 
 ### Screenshot 5: Apache Virtual Host Configuration
 
