@@ -37,13 +37,13 @@ The commands included `pwd`, `mkdir`, `cd`, `touch`, `cat`, `cp`, `mv`, `rm` and
 
 I used the `mkdir LabFiles` command to create a new directory and navigated into it using the `cd` command.
 
-![Creating LabFiles Directory](screenshots/bash%201.png)
+![Creating LabFiles Directory](./screenshots/Bash%201.png)
 
 ### Evidence 2: Basic File Management Commands
 
 I practised using the `cp`, `mv` and `rm` commands to copy, rename and delete files.
 
-![Basic Linux Commands](screenshots/bash%202%2.png)
+![Basic Linux Commands](./screenshots/Bash%202.png)
 
 ### Reflection Questions
 
