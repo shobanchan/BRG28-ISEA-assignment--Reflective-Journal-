@@ -33,9 +33,17 @@ I practised basic Linux commands to create directories, navigate the file system
 
 The commands included `pwd`, `mkdir`, `cd`, `touch`, `cat`, `cp`, `mv`, `rm` and `ls`.
 
-### Evidence: File Operations
+### Evidence 1: Creating a Directory
 
-![File System Operations](screenshots/part1-file-operations.png)
+I used the `mkdir LabFiles` command to create a new directory and navigated into it using the `cd` command.
+
+![Creating LabFiles Directory](screenshots/bash%201-%20mkdir%20labfiles.png)
+
+### Evidence 2: Basic File Management Commands
+
+I practised using the `cp`, `mv` and `rm` commands to copy, rename and delete files.
+
+![Basic Linux Commands](screenshots/bash%202%20-%20basic%20commands%20-%20cp%20%2C%20mv%2Crm.png)
 
 ### Reflection Questions
 
@@ -63,9 +71,11 @@ The script displays a personalised greeting message.
 
 I used `chmod 777` to change the file permissions and executed the script through the Linux terminal.
 
-### Evidence: Bash Script and Execution
+### Evidence 3: Hello World Script Execution
 
-![Hello World Script](screenshots/part2-hello-world.png)
+The screenshot below shows the output after executing the Bash script.
+
+![Hello World Script Output](screenshots/bash%203%20-%20output%20for%20hello_world%20sh.png)
 
 ### Reflection Questions
 
@@ -109,9 +119,17 @@ The script:
 - Uses `if`, `elif` and `else` statements
 - Validates invalid user input
 
-### Evidence: Loops and Conditionals
+### Evidence 4: System Information Script
 
-![System Information Script](screenshots/part3-system-info.png)
+The screenshot below shows the Bash script created using GNU Nano.
+
+![System Information Script](screenshots/system_info_script.png)
+
+### Evidence 5: System Information Output
+
+The screenshot below shows the execution of the script, including the loop and conditional statements.
+
+![System Information Output](screenshots/system_info_output.png)
 
 ### Reflection Questions
 
@@ -158,9 +176,17 @@ I used `chmod 745` to set the script permissions and executed the script through
 
 I entered `4` when prompted for the number of monitoring checks.
 
-### Evidence: System Resource Monitoring
+### Evidence 6: System Resource Monitoring Script
 
-![System Resource Monitoring](screenshots/part4-resource-monitoring.png)
+The screenshot below shows the Bash script used to automate system resource monitoring.
+
+![System Resource Monitoring Script](screenshots/system_resource.png)
+
+### Evidence 7: System Resource Monitoring Output
+
+The screenshot below shows the system monitoring results, including CPU, memory and disk usage.
+
+![System Resource Monitoring Output](screenshots/system_resource_output.png)
 
 ### System Monitoring Observations
 
@@ -250,4 +276,3 @@ The system monitoring exercise demonstrated how Bash scripts can reduce repetiti
 Although I encountered several challenges involving file permissions, script syntax and the Ubuntu environment, I was able to troubleshoot these issues and successfully execute the scripts.
 
 Overall, this lab strengthened my understanding of Linux administration and provided a foundation for further learning in system automation.
-
