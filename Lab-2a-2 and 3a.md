@@ -723,7 +723,7 @@ It is important to monitor costs, apply updates and stop or delete unused resour
 
 This screenshot shows the DuckDNS hostname configured to point to my Azure VM's public IP address.
 
-![DuckDNS Configuration](DuckDns%20Config.png)
+![DuckDNS Config](DuckDns%20Config.png)
 
 ### Screenshot 2: DNS Resolution
 
