@@ -760,7 +760,7 @@ This screenshot shows the website accessed through HTTPS with a valid browser se
 
 This screenshot shows the successful Certbot renewal dry-run.
 
-![Certificate Renewal](3a1-renewal.png)
+![Certificate Renewal](./screenshots/Renew-dry-run.png.png)
 
 ## Conclusion
 
