@@ -727,7 +727,7 @@ This screenshot shows the DuckDNS hostname configured to point to my Azure VM's 
 
 ### Screenshot 2: DNS Resolution
 
-This screenshot shows the successful DNS lookup using Google's public DNS server.
+This screenshot shows the successful DNS lookup 
 
 ![DuckDNS Resolution](./screenshots/NSlookup.png)
 
