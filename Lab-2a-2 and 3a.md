@@ -729,7 +729,7 @@ This screenshot shows the DuckDNS hostname configured to point to my Azure VM's 
 
 This screenshot shows the successful DNS lookup using Google's public DNS server.
 
-![DNS Resolution](3a1-nslookup.png)
+![DuckDNS Resolution](./screenshots/NSlookup.png)
 
 ### Screenshot 3: Apache Website Through Domain
 
