@@ -688,7 +688,7 @@ This screenshot shows the certificate issued for the DuckDNS hostname.
 
 This screenshot shows the successful TLS certificate verification using `curl`.
 
-![TLS Verification](3a1-tls-verification.png)
+![TLS Verification](./screenshots/curl.png)
 
 ### Screenshot 7: Secure HTTPS Website
 
