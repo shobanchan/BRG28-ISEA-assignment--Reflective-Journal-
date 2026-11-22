@@ -608,66 +608,6 @@ I investigated the browser-side issue and resolved it without reinstalling the T
 
 The successful `curl` certificate verification helped me distinguish the browser problem from the server configuration.
 
-## Part 9: Advanced DNS Experiments
-
-### 9.1 Certificate Authority Investigation
-
-The lab required investigating the certificate issuers for:
-
-- `murdoch.edu.au`
-- `csn.murdoch.edu.au`
-
-I inspected the certificate information for `murdoch.edu.au` in Chrome and observed DigiCert certificate authority information.
-
-The exact issuer information for both websites should be recorded from the certificate details.
-
-### 9.2 Subdomain Configuration
-
-A subdomain can point to a different server by configuring an appropriate DNS record.
-
-For example:
-
-```text
-www.example.com  -> Server A
-test.example.com -> Server B
-```
-
-This allows different services to operate under related hostnames.
-
-This experiment was reviewed conceptually; a separate subdomain pointing to another student's server was not configured.
-
-### 9.3 Multiple A Records and Failover
-
-A domain can have multiple A records pointing to different IP addresses.
-
-For example:
-
-```text
-example.com -> 192.0.2.10
-example.com -> 192.0.2.20
-```
-
-These are example addresses used for documentation.
-
-Multiple A records may distribute connections across servers, but they do not guarantee automatic failover.
-
-A DNS resolver may continue returning an unavailable server's IP address.
-
-Reliable failover generally requires health checks and additional traffic-management mechanisms.
-
-### 9.4 DNS Propagation
-
-DNS propagation refers to the time required for DNS changes to become visible through different resolvers.
-
-DNS caching and time-to-live values affect how quickly updated records are observed.
-
-### 9.5 DNS Load Balancing and High Availability
-
-DNS round-robin can return multiple IP addresses for a hostname.
-
-However, DNS round-robin alone does not guarantee equal traffic distribution or automatic removal of failed servers.
-
-High-availability solutions commonly use redundant servers, load balancers and health monitoring.
 
 ## Part 10: Reflection Questions
 
