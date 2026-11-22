@@ -759,7 +759,7 @@ This screenshot shows the successful TLS certificate verification using `curl`.
 
 This screenshot shows the website accessed through HTTPS with a valid browser security indicator.
 
-![Secure HTTPS Website](3a1-https.png)
+![Secure HTTPS Website](./screenshot/Secure%20Connection.png)
 
 ### Screenshot 8: Certificate Renewal Test
 
