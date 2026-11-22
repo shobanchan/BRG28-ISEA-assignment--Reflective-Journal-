@@ -129,7 +129,7 @@ The screenshot below shows the Bash script created using GNU Nano.
 
 The screenshot below shows the execution of the script, including the loop and conditional statements.
 
-![System Information Output](./screenshots/system_info_output.png)
+![System Information Output](./screenshots/output_system_info.png)
 
 ### Reflection Questions
 
