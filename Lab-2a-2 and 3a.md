@@ -735,7 +735,7 @@ This screenshot shows the successful DNS lookup
 
 This screenshot shows my Apache webpage accessed through the DuckDNS hostname.
 
-![Apache Domain Access](3a1-apache-domain.png)
+![Apache Domain Access](Apache2%20New.png)
 
 ### Screenshot 4: Let's Encrypt Certificate
 
