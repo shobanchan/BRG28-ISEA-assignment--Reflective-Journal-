@@ -214,13 +214,13 @@ This helped me understand the difference between HTML content and CSS presentati
 
 The screenshot shows the configuration of my Azure Ubuntu virtual machine, including its operating system, resource group, public IP address and virtual network settings.
 
-![Azure VM Configuration](Azure%20VM%20setting.png)
+![Azure VM Configuration](./screenshot/Azure%20VM%20setting.png)
 
 ### Screenshot 2: Azure Ubuntu Virtual Machine
 
 This screenshot shows my Ubuntu virtual machine deployed on Microsoft Azure. I used this environment to complete the Apache web server lab.
 
-![Azure Ubuntu VM](Azure%20Ubuntu.png)
+![Azure Ubuntu VM](./screenshot/Azure%20Ubuntu.png)
 
 ### Screenshot 3: Apache Service Status
 
@@ -228,7 +228,7 @@ I used `sudo systemctl status apache2` to verify that the Apache web server was 
 
 The service displayed `active (running)`.
 
-![Apache Service Status](Status.png)
+![Apache Service Status](./screenshot/Status.png)
 
 ### Screenshot 4: Apache Default Webpage
 
@@ -236,7 +236,7 @@ After verifying the Apache service, I entered the virtual machine's public IP ad
 
 The Apache2 Ubuntu Default Page loaded successfully, confirming that the web server was accessible through HTTP.
 
-![Apache Default Page](Apache2%20Default%20Pge.png)
+![Apache Default Page](./screenshot/Apache2%20Default%20Pge.png)
 
 ### Screenshot 5: Apache Website Directory
 
@@ -248,7 +248,7 @@ ls /var/www/html
 
 The directory contained `index.html`, which is the default webpage served by Apache.
 
-![Apache Website Directory](website%20directory.png)
+![Apache Website Directory](./screenshot/website%20directory.png)
 
 ### Screenshot 6: Modified Apache Webpage
 
