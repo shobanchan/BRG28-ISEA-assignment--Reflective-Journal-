@@ -256,7 +256,7 @@ I edited `/var/www/html/index.html` using the Nano text editor and replaced the 
 
 After saving the changes and refreshing my browser, the updated webpage appeared successfully.
 
-![Modified Apache Webpage](Edit%20of%20apache%20page.png)
+![Modified Apache Webpage](./screenshots/Edit%20of%20apache%20page.png)
 
 ## Conclusion
 
