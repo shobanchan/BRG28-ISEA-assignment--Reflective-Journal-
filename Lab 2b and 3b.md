@@ -75,7 +75,7 @@ I used `chmod 777` to change the file permissions and executed the script throug
 
 The screenshot below shows the output after executing the Bash script.
 
-![Hello World Script Output](screenshots/bash%203%20-%20output%20for%20hello_world%20sh.png)
+![Hello World Script Output](./screenshots/bash%203.png)
 
 ### Reflection Questions
 
@@ -123,13 +123,13 @@ The script:
 
 The screenshot below shows the Bash script created using GNU Nano.
 
-![System Information Script](screenshots/system_info_script.png)
+![System Information Script](./screenshots/system_info_script.png)
 
 ### Evidence 5: System Information Output
 
 The screenshot below shows the execution of the script, including the loop and conditional statements.
 
-![System Information Output](screenshots/system_info_output.png)
+![System Information Output](./screenshots/system_info_output.png)
 
 ### Reflection Questions
 
@@ -180,13 +180,13 @@ I entered `4` when prompted for the number of monitoring checks.
 
 The screenshot below shows the Bash script used to automate system resource monitoring.
 
-![System Resource Monitoring Script](screenshots/system_resource.png)
+![System Resource Monitoring Script](./screenshots/system_resource.png)
 
 ### Evidence 7: System Resource Monitoring Output
 
 The screenshot below shows the system monitoring results, including CPU, memory and disk usage.
 
-![System Resource Monitoring Output](screenshots/system_resource_output.png)
+![System Resource Monitoring Output](./screenshots/system_resource_output.png)
 
 ### System Monitoring Observations
 
