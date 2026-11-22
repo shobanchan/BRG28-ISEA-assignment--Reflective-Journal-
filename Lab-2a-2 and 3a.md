@@ -743,11 +743,6 @@ This screenshot shows the certificate issued for the DuckDNS hostname.
 
 ![Apache Domain Access](./screenshots/Cert%20Issued%20by.png)
 
-### Screenshot 5: Apache Virtual Host Configuration
-
-This screenshot shows the Apache virtual host configuration for the DuckDNS hostname.
-
-![Apache Virtual Host](3a1-apache-vhost.png)
 
 ### Screenshot 6: HTTPS Certificate Verification
 
