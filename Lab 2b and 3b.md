@@ -74,7 +74,7 @@ The `echo` command displays text in the terminal.
 
 **Screenshot:**
 
-![Hello World Script](hello_world_sh.png)
+![Hello World Script](./screenshots/bash%203.png)
 
 ## 4. Bash Variables, Arithmetic and Loops
 
