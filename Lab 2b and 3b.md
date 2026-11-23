@@ -64,7 +64,7 @@ These commands helped me understand how Linux manages files and directories.
 
 **Screenshot:**
 
-![Bash 2 - File Management](bash2.png)
+![Bash 2 - File Management](./screenshots/Bash%202.png)
 
 ## 3. Hello World Bash Script
 
