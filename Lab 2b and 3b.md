@@ -388,7 +388,7 @@ After testing, I restored the hourly schedule:
 
 **Screenshot:**
 
-![Cron Execution Verification](lab3b_07_cron_output.png)
+![Cron Execution Verification](./screenshots/Deliverable%207.png)
 
 ## Deliverable 8 — SCP Cloud Transfer
 
@@ -418,11 +418,7 @@ The ZIP files appeared in the Azure home directory.
 
 **SCP Screenshot:**
 
-![SCP File Transfer](lab3b_08_scp.png)
-
-**Azure Verification Screenshot:**
-
-![Azure Backup Verification](lab3b_08_azure.png)
+![SCP File Transfer](./screenshots/Deliverable%208.png)
 
 ## Deliverable 9 — SSH Key Authentication
 
@@ -458,7 +454,7 @@ SSH host key verification helps confirm the identity of the remote server before
 
 **Screenshot:**
 
-![SSH Authentication](lab3b_09_ssh.png)
+![SSH Authentication](./screenshots/Deliverable%209.png)
 
 ## Deliverable 10 — Final Automated Backup Script
 
