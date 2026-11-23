@@ -508,11 +508,7 @@ After verifying the uploaded backups on Azure, I restored the hourly cron schedu
 
 **Final Script Screenshot:**
 
-![Final Backup Script](lab3b_10_final_script.png)
-
-**Final Execution Screenshot:**
-
-![Final Cloud Backup](lab3b_10_final_output.png)
+![Final Backup Script](./screenshots/Final_script.png)
 
 ---
 
