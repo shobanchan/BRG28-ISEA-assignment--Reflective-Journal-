@@ -44,7 +44,7 @@ The command creates a directory named `labfiles`.
 
 **Screenshot:**
 
-![Bash 1 - Creating Directory](./screenshots/bash%201.png)
+![Bash 1 - Creating Directory](./screenshots/Bash%201.png)
 
 ### Bash 2 — File Management Commands
 
