@@ -207,7 +207,7 @@ The `-R` option recursively lists directories and their contents.
 
 **Screenshot:**
 
-![Test Files and Directories](lab3b_02_documents.png)
+![Test Files and Directories](./screenshots/Deliverable%20.png)
 
 ## Deliverable 3 — Basic Backup Script Working
 
@@ -251,7 +251,7 @@ The test files and School subdirectory were successfully copied.
 
 **Screenshot:**
 
-![Basic Backup Script](lab3b_03_script.png)
+![Basic Backup Script](./screenshots/back_output.png)
 
 ## Deliverable 4 — Script Moved to /usr/bin
 
@@ -288,7 +288,7 @@ The script executed successfully.
 
 **Screenshot:**
 
-![Script Moved to usr bin](lab3b_04_usrbin.png)
+![Script Moved to usr bin](./screenshots/usr_bin.png)
 
 ## Deliverable 5 — ZIP Archive with Date Filename
 
