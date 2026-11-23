@@ -251,7 +251,7 @@ The test files and School subdirectory were successfully copied.
 
 **Screenshot:**
 
-![Basic Backup Script](./screenshots/testscript.png)
+![Basic Backup Script](./screenshots/testscripts.png)
 
 ## Deliverable 4 — Script Moved to /usr/bin
 
