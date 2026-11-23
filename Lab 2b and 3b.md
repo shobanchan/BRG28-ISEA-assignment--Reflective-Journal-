@@ -111,11 +111,11 @@ This activity helped me understand how Linux commands can be combined into scrip
 
 **Script Screenshot:**
 
-![System Information Script](system_info_script.png)
+![System Information Script](./screenshots/system_info_script.png)
 
 **Output Screenshot:**
 
-![System Information Output](system_info_output.png)
+![System Information Output](./screenshots/output_system_info.png)
 
 ## 6. System Resource Monitoring
 
@@ -125,11 +125,11 @@ Resource monitoring helps system administrators identify performance issues and 
 
 **Script Screenshot:**
 
-![System Resource Script](system_resource.png)
+![System Resource Script](./screenshots/system_resource.png)
 
 **Output Screenshot:**
 
-![System Resource Output](system_resource_output.png)
+![System Resource Output](./screenshots/system_resource_output.png)
 
 ## 7. Lab 2b Reflection
 
