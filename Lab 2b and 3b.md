@@ -1,278 +1,661 @@
 
-# Lab 2b-2: Introduction to Bash Scripting & System Automation
+# BRG28-ISEA — Lab 2b & Lab 3b
+## Linux Bash Scripting and Automated Cloud Backup
+
+## Introduction
+
+This README documents my practical experience with Ubuntu Linux, Bash scripting, file management, backup automation, cron scheduling, SSH authentication, and cloud file transfers.
+
+The labs were completed using:
+- Ubuntu Linux on Oracle VirtualBox
+- Microsoft Azure Ubuntu Virtual Machine
+- Bash scripting
+- Cron scheduler
+- SSH and SCP
+
+---
+
+# Lab 2b — Introduction to Bash Scripting
 
 ## 1. Objective
 
-The objective of this lab was to develop foundational skills in Linux Bash scripting and system automation.
+The objective of Lab 2b was to understand basic Linux commands and develop fundamental Bash scripting skills.
 
 The activities included:
-- Navigating the Linux file system
-- Creating, copying, renaming and deleting files
-- Writing and executing Bash scripts
-- Understanding file permissions
-- Implementing loops and conditional statements
-- Automating CPU, memory and disk monitoring
+- Creating files and directories
+- Copying, moving, and removing files
+- Using variables and arithmetic expressions
+- Understanding Bash loops
+- Creating and executing scripts
+- Displaying system information
+- Monitoring system resources
 
-### Lab Environment
+## 2. Basic Linux Commands
 
-| Component | Description |
+### Bash 1 — Creating a Directory
+
+I practised creating directories using the `mkdir` command.
+
+```bash
+mkdir labfiles
+```
+
+The command creates a directory named `labfiles`.
+
+**Screenshot:**
+
+![Bash 1 - Creating Directory](bash1.png)
+
+### Bash 2 — File Management Commands
+
+I practised the following Linux commands:
+
+| Command | Description |
 |---|---|
-| Operating System | Ubuntu 20.04.4 LTS |
-| Virtualisation | Oracle VirtualBox |
-| Shell | Bash |
-| Text Editor | GNU Nano |
+| `pwd` | Displays current working directory |
+| `ls` | Lists files and directories |
+| `mkdir` | Creates a directory |
+| `cp` | Copies files |
+| `mv` | Moves or renames files |
+| `rm` | Removes files |
+| `cd` | Changes directory |
+
+These commands helped me understand how Linux manages files and directories.
+
+**Screenshot:**
+
+![Bash 2 - File Management](bash2.png)
+
+## 3. Hello World Bash Script
+
+I created a basic Bash script to understand how commands are executed from a script file.
+
+The `echo` command displays text in the terminal.
+
+**Screenshot:**
+
+![Hello World Script](hello_world_sh.png)
+
+## 4. Bash Variables, Arithmetic and Loops
+
+I practised using variables to store information, arithmetic expressions to perform calculations, and loops to repeat commands.
+
+Example:
+
+```bash
+total=0
+
+for i in {1..5}
+do
+    ((total+=i))
+done
+
+echo "Total: $total"
+```
+
+The loop adds the numbers from 1 to 5.
+
+Expected output:
+
+```text
+Total: 15
+```
+
+This demonstrated how loops can automate repetitive calculations.
+
+## 5. System Information Script
+
+I worked with a Bash script that retrieves and displays Linux system information.
+
+This activity helped me understand how Linux commands can be combined into scripts.
+
+**Script Screenshot:**
+
+![System Information Script](system_info_script.png)
+
+**Output Screenshot:**
+
+![System Information Output](system_info_output.png)
+
+## 6. System Resource Monitoring
+
+I worked with a script to display system resource information.
+
+Resource monitoring helps system administrators identify performance issues and understand resource utilization.
+
+**Script Screenshot:**
+
+![System Resource Script](system_resource.png)
+
+**Output Screenshot:**
+
+![System Resource Output](system_resource_output.png)
+
+## 7. Lab 2b Reflection
+
+As a beginner in Bash scripting, I initially found it difficult to understand how scripts, variables, and loops work.
+
+Through practical exercises, I learnt that Bash scripts contain commands executed in sequence.
+
+I also learnt how Linux commands can be combined to automate repetitive tasks.
+
+These concepts provided the foundation for Lab 3b.
+
+---
+
+# Lab 3b — Automated Backup and Cloud Transfer
+
+## 1. Objective
+
+The objective of Lab 3b was to create an automated backup system using Bash scripting.
+
+The activities included:
+- Creating test files and directories
+- Writing a backup script
+- Copying files recursively
+- Compressing files using ZIP
+- Adding timestamps to backup filenames
+- Moving scripts to `/usr/bin`
+- Scheduling automatic backups using cron
+- Configuring SSH key authentication
+- Transferring backup files to Azure using SCP
+
+## 2. Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Local OS | Ubuntu Linux |
+| Virtualization | Oracle VirtualBox |
 | Username | shoban |
+| Documents | `/home/shoban/Documents` |
+| Backup folder | `/home/shoban/backup` |
+| Script | `/usr/bin/testscript` |
+| Cloud provider | Microsoft Azure |
+| Cloud OS | Ubuntu Linux |
+| Azure username | azureuser |
+| Transfer protocol | SCP over SSH |
 
 ---
 
-## 2. Part 1: File System Navigation and Management
+## Deliverable 1 — Practice Bash Commands
 
-### Activities Performed
+The basic Bash commands, variables, arithmetic operations, and loops were practised during Lab 2b.
 
-I practised basic Linux commands to create directories, navigate the file system and manipulate files.
+These skills were applied when developing the automated backup script.
 
-The commands included `pwd`, `mkdir`, `cd`, `touch`, `cat`, `cp`, `mv`, `rm` and `ls`.
+## Deliverable 2 — Test Files and Directories Created
 
-### Evidence 1: Creating a Directory
+I created test files and a subdirectory inside the Documents folder.
 
-I used the `mkdir LabFiles` command to create a new directory and navigated into it using the `cd` command.
+Commands used:
 
-![Creating LabFiles Directory](./screenshots/Bash%201.png)
+```bash
+echo "This is my first backup test file" > /home/shoban/Documents/file1.txt
 
-### Evidence 2: Basic File Management Commands
+mkdir /home/shoban/Documents/School
 
-I practised using the `cp`, `mv` and `rm` commands to copy, rename and delete files.
+echo "This is my school assignment" > /home/shoban/Documents/School/assignment.txt
+```
 
-![Basic Linux Commands](./screenshots/Bash%202.png)
+I verified the directory structure using:
 
-### Reflection Questions
+```bash
+ls -R /home/shoban/Documents
+```
 
-**Q1. What command did you use to create a new directory?**
+The `-R` option recursively lists directories and their contents.
 
-I used `mkdir LabFiles` to create a new directory named LabFiles. The `mkdir` command allows users to create directories directly from the Linux terminal.
+**Screenshot:**
 
-**Q2. How can you view the contents of a file without opening a GUI?**
+![Test Files and Directories](lab3b_02_documents.png)
 
-I used `cat notes.txt` to display the contents of the text file directly in the terminal.
+## Deliverable 3 — Basic Backup Script Working
 
-**Q3. What is the difference between cp and mv?**
+I created a Bash script using:
 
-The `cp` command copies a file while keeping the original file intact. The `mv` command moves a file to another location or renames it.
+```bash
+nano /home/shoban/testscript
+```
 
----
+Initial script:
 
-## 3. Part 2: Creating and Executing Basic Bash Scripts
+```bash
+#!/bin/bash
 
-### Activities Performed
+cp -R /home/shoban/Documents/. /home/shoban/backup/
 
-I created a Bash script named `hello_world.sh` using GNU Nano.
+echo "Backup completed successfully"
+```
 
-The script displays a personalised greeting message.
+The `cp -R` command recursively copies files and subdirectories.
 
-I used `chmod 777` to change the file permissions and executed the script through the Linux terminal.
+I granted execute permissions:
 
-### Evidence 3: Hello World Script Execution
+```bash
+chmod 777 /home/shoban/testscript
+```
 
-The screenshot below shows the output after executing the Bash script.
+I executed the script:
 
-![Hello World Script Output](./screenshots/bash%203.png)
+```bash
+/home/shoban/testscript
+```
 
-### Reflection Questions
+I verified the backup using:
 
-**Q1. What is the purpose of chmod 777?**
+```bash
+ls -R /home/shoban/backup
+```
 
-The command `chmod 777` gives the file owner, group and other users permission to read, write and execute the file.
+The test files and School subdirectory were successfully copied.
 
-The permission values are:
-- Read = 4
-- Write = 2
-- Execute = 1
+**Screenshot:**
 
-Therefore, 7 represents read, write and execute permissions.
+![Basic Backup Script](lab3b_03_script.png)
 
-However, using 777 is generally not recommended in production environments because it allows all users to modify the file.
+## Deliverable 4 — Script Moved to /usr/bin
 
-**Q2. What is chmod +x used for?**
+I moved the script into `/usr/bin`:
 
-The `chmod +x` command adds execute permission to a file, allowing it to be executed as a script or program.
+```bash
+sudo mv /home/shoban/testscript /usr/bin/testscript
+```
 
-**Q3. Why is #!/bin/bash used at the beginning of a script?**
+I changed its ownership:
 
-The line `#!/bin/bash` is called a shebang. It tells Linux to use the Bash interpreter to execute the script.
+```bash
+sudo chown root:root /usr/bin/testscript
+```
 
-**Q4. How can you personalise script output?**
+I then applied execute permissions:
 
-I personalised the script by using the `echo` command to display my name.
+```bash
+sudo chmod 755 /usr/bin/testscript
+```
 
----
+The `/usr/bin` directory is normally included in the Linux PATH environment variable.
 
-## 4. Part 3: Implementing Loops and Conditionals
+This allows the script to be executed from different directories.
 
-### Activities Performed
+I tested it using:
 
-I created a Bash script named `system_info.sh`.
+```bash
+cd /tmp
+testscript
+```
 
-The script:
-- Displays the current Linux username using `whoami`
-- Uses a `for` loop to count from 1 to 5
-- Accepts numerical input from the user
-- Uses `if`, `elif` and `else` statements
-- Validates invalid user input
+The script executed successfully.
 
-### Evidence 4: System Information Script
+**Screenshot:**
 
-The screenshot below shows the Bash script created using GNU Nano.
+![Script Moved to usr bin](lab3b_04_usrbin.png)
 
-![System Information Script](./screenshots/system_info_script.png)
+## Deliverable 5 — ZIP Archive with Date Filename
 
-### Evidence 5: System Information Output
+I modified the backup script to create compressed ZIP archives.
 
-The screenshot below shows the execution of the script, including the loop and conditional statements.
+The date variable was defined as:
 
-![System Information Output](./screenshots/output_system_info.png)
+```bash
+now=$(date +"%d_%m_%y_%H_%M")
+```
 
-### Reflection Questions
+The date format includes:
 
-**Q1. How does the for loop work?**
-
-A for loop executes a set of commands repeatedly.
-
-In my script, the variable `i` takes values from 1 to 5. During each iteration, the `echo` command displays the current number.
-
-**Q2. What happens if the number entered is greater than 10?**
-
-The script evaluates the condition using `-gt`, which means greater than.
-
-If the user enters 15, the script displays the message "Your number is greater than 10."
-
-**Q3. What happens when invalid input is entered?**
-
-The script validates whether the input contains only digits.
-
-If the user enters letters or invalid characters, the script displays an error message asking the user to enter a whole number.
-
-**Q4. How could invalid input be handled more gracefully?**
-
-The script could be improved by allowing users to re-enter their input instead of terminating immediately.
-
-This could be implemented using a `while` loop that repeatedly prompts the user until valid input is entered.
-
----
-
-## 5. Part 4: Automating System Monitoring Tasks
-
-### Activities Performed
-
-I created a Bash script named `system_resource_monitoring.sh` to automate the monitoring of system resources.
-
-The script uses:
-- `top` to display CPU and process information
-- `free -h` to display memory usage
-- `df -h` to display disk usage
-- `sleep` to control monitoring intervals
-- A `for` loop to repeat monitoring tasks
-
-I used `chmod 745` to set the script permissions and executed the script through the terminal.
-
-I entered `4` when prompted for the number of monitoring checks.
-
-### Evidence 6: System Resource Monitoring Script
-
-The screenshot below shows the Bash script used to automate system resource monitoring.
-
-![System Resource Monitoring Script](./screenshots/system_resource.png)
-
-### Evidence 7: System Resource Monitoring Output
-
-The screenshot below shows the system monitoring results, including CPU, memory and disk usage.
-
-![System Resource Monitoring Output](./screenshots/system_resource_output.png)
-
-### System Monitoring Observations
-
-The first monitoring round displayed the following information:
-
-| Resource | Observed Value |
+| Format | Meaning |
 |---|---|
-| CPU Idle | 93.3% |
-| Total Memory | 5.4 GiB |
-| Used Memory | 835 MiB |
-| Available Memory | 4.4 GiB |
-| Root Disk Size | 9.0 GB |
-| Root Disk Usage | 65% |
+| `%d` | Day |
+| `%m` | Month |
+| `%y` | Year |
+| `%H` | Hour |
+| `%M` | Minute |
 
-These results provided a snapshot of the virtual machine's resource utilisation.
+The ZIP command was:
 
-### Reflection Questions
+```bash
+zip -r "$zip_file" backup/
+```
 
-**Q1. What does free -h show?**
+I verified the ZIP files using:
 
-The command `free -h` displays system memory information, including total, used, free and available RAM, as well as swap memory.
+```bash
+ls -lh /home/shoban/*.zip
+```
 
-The `-h` option displays the values in a human-readable format.
+The filenames included the date and time, allowing multiple backups to be distinguished.
 
-**Q2. How can the script be modified to monitor network usage?**
+**Screenshot:**
 
-The script could be extended using Linux monitoring tools such as `sar`, `iftop` or `vnstat`.
+![Dated ZIP Backup](lab3b_05_zip.png)
 
-For example, the `sar -n DEV 1 1` command can display network interface statistics if the `sysstat` package is installed.
+## Deliverable 6 — Cron Job Setup
 
-This would allow administrators to observe incoming and outgoing network traffic.
+I checked whether the cron service was running:
 
-**Q3. Why is automation important for system administrators?**
+```bash
+sudo systemctl status cron
+```
 
-Automation helps system administrators reduce repetitive manual work, improve efficiency and maintain consistency.
+The service was active.
 
-Instead of manually checking CPU, memory and disk usage, Bash scripts can perform these checks automatically at regular intervals.
+I opened the cron configuration:
 
-Automation also supports system troubleshooting, maintenance and early detection of performance issues.
+```bash
+sudo nano /etc/crontab
+```
+
+I added:
+
+```text
+9 * * * * shoban /usr/bin/testscript
+```
+
+This schedules the backup script to execute at nine minutes past every hour.
+
+I verified the configuration:
+
+```bash
+tail -n 2 /etc/crontab
+```
+
+**Screenshot:**
+
+![Cron Configuration](lab3b_06_cron.png)
+
+## Deliverable 7 — Successful Cron Execution
+
+To test automatic execution without waiting an hour, I temporarily changed the cron schedule:
+
+```text
+* * * * * shoban /usr/bin/testscript
+```
+
+This instructed cron to run the script every minute.
+
+I verified the resulting backup files:
+
+```bash
+ls -lt /home/shoban/*.zip
+```
+
+New ZIP files appeared with different timestamps.
+
+After testing, I restored the hourly schedule:
+
+```text
+9 * * * * shoban /usr/bin/testscript
+```
+
+**Screenshot:**
+
+![Cron Execution Verification](lab3b_07_cron_output.png)
+
+## Deliverable 8 — SCP Cloud Transfer
+
+I used SCP to securely transfer ZIP backup files from my VirtualBox Ubuntu machine to Microsoft Azure.
+
+SCP transfers files through an encrypted SSH connection.
+
+The transfer command followed this format:
+
+```bash
+scp -i ~/.ssh/azure_backup_key \
+/home/shoban/backup_file.zip \
+azureuser@<AZURE_PUBLIC_IP>:/home/azureuser/
+```
+
+I replaced the example filename and IP address with the actual values during execution.
+
+The transfer reached 100%.
+
+I then connected to Azure and verified the transferred files:
+
+```bash
+ls -lt /home/azureuser/*.zip
+```
+
+The ZIP files appeared in the Azure home directory.
+
+**SCP Screenshot:**
+
+![SCP File Transfer](lab3b_08_scp.png)
+
+**Azure Verification Screenshot:**
+
+![Azure Backup Verification](lab3b_08_azure.png)
+
+## Deliverable 9 — SSH Key Authentication
+
+I generated an Ed25519 SSH key pair:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/azure_backup_key
+```
+
+This created:
+- `azure_backup_key` — private key
+- `azure_backup_key.pub` — public key
+
+I registered the public key with my Azure Ubuntu VM.
+
+I tested the SSH connection using:
+
+```bash
+ssh -i ~/.ssh/azure_backup_key \
+azureuser@<AZURE_PUBLIC_IP>
+```
+
+I also tested SSH using administrator privileges:
+
+```bash
+sudo ssh -i /home/shoban/.ssh/azure_backup_key \
+azureuser@<AZURE_PUBLIC_IP>
+```
+
+The connection succeeded.
+
+SSH host key verification helps confirm the identity of the remote server before establishing a trusted connection.
+
+**Screenshot:**
+
+![SSH Authentication](lab3b_09_ssh.png)
+
+## Deliverable 10 — Final Automated Backup Script
+
+The final Bash script combines recursive copying, ZIP compression, timestamp generation, and SCP transfer.
+
+```bash
+#!/bin/bash
+
+# Get current date and time
+now=$(date +"%d_%m_%y_%H_%M")
+
+# Define directories
+source_dir="/home/shoban/Documents"
+backup_dir="/home/shoban/backup"
+zip_file="/home/shoban/$now.zip"
+
+# Create backup directory
+mkdir -p "$backup_dir" || exit 1
+
+# Copy documents recursively
+cp -R "$source_dir/." "$backup_dir/" || exit 1
+
+# Create ZIP archive
+cd /home/shoban || exit 1
+zip -r "$zip_file" backup/ || exit 1
+
+# Transfer ZIP to Azure
+scp -o BatchMode=yes -o ConnectTimeout=15 \
+-i /home/shoban/.ssh/azure_backup_key \
+"$zip_file" azureuser@<AZURE_PUBLIC_IP>:/home/azureuser/ || exit 1
+
+# Display completion message
+echo "Backup and cloud transfer completed: $now.zip"
+```
+
+**Note:** `<AZURE_PUBLIC_IP>` is a placeholder that must be replaced with the actual Azure VM public IP address before running the script.
+
+### Final Testing
+
+I executed the final script:
+
+```bash
+testscript
+```
+
+The script successfully created a ZIP archive and transferred it to Azure.
+
+I also tested the automatic cloud transfer by temporarily scheduling the script every minute.
+
+After verifying the uploaded backups on Azure, I restored the hourly cron schedule.
+
+**Final Script Screenshot:**
+
+![Final Backup Script](lab3b_10_final_script.png)
+
+**Final Execution Screenshot:**
+
+![Final Cloud Backup](lab3b_10_final_output.png)
 
 ---
 
-## 6. Challenges Encountered
+# Lab 3b — Reflection Questions
 
-### Ubuntu Graphical Interface Issue
+## 1. Why is using absolute paths important in scripts run by cron?
 
-During the lab, my Ubuntu virtual machine started in a text-based login environment instead of the graphical desktop.
+Absolute paths specify the complete location of files and directories.
 
-I investigated the login environment and restored the Ubuntu graphical interface.
+Cron may execute scripts from a different working directory and with a different environment from an interactive terminal.
 
-### Incorrect Script Filename
+Using absolute paths ensures that the script can locate the required files regardless of its working directory.
 
-While creating my first Bash script, I encountered errors because the filename used in the terminal did not match the saved filename.
+For example:
 
-I used `ls -la` to inspect the directory and corrected the filename.
+```bash
+/home/shoban/Documents
+```
 
-### File Permission Issues
+## 2. What are the benefits of cloud exporting for backups?
 
-I initially encountered difficulties executing Bash scripts because execute permissions were not enabled.
+Cloud exporting provides an additional copy of important files on a remote system.
 
-I used `chmod` to modify file permissions and `ls -l` to verify the changes.
+If the local computer experiences hardware failure, accidental deletion, or data corruption, a separate cloud backup may help restore the files.
 
-### Incorrect Shebang
+Cloud storage also provides remote accessibility and reduces dependence on a single physical computer.
 
-One of my scripts initially failed because the Bash interpreter path was incorrect.
+## 3. How does cron differ from manual execution?
 
-After correcting the first line to `#!/bin/bash`, the script executed successfully.
+Manual execution requires a user to enter a command.
 
-### VirtualBox Clipboard Limitations
+Cron automatically executes commands according to a predefined schedule.
 
-I experienced difficulties copying and pasting commands between Windows and Ubuntu.
+For example:
 
-To continue the lab, I manually entered the commands and Bash scripts.
+```bash
+testscript
+```
 
-These challenges helped me gain practical troubleshooting experience with Linux commands, permissions and Bash syntax.
+runs the script manually.
+
+However:
+
+```text
+9 * * * * shoban /usr/bin/testscript
+```
+
+runs it automatically at nine minutes past every hour while the machine is running.
+
+## 4. What happens if SSH keys are not accepted ahead of time?
+
+SSH may prompt the user to verify the remote server's fingerprint or request authentication.
+
+These prompts can interrupt automated cron jobs because cron cannot interact with the terminal.
+
+For automated backups, the remote server's identity should be verified in advance, and the appropriate SSH public key must be authorized.
+
+## 5. How can login messages help improve user/system engagement?
+
+Login messages can display useful information when users access a Linux system.
+
+Tools such as `figlet` and `neofetch` can display customized messages or system information.
+
+These features may improve user experience and help administrators identify the system they are accessing.
+
+Login messages can also communicate maintenance notices and security reminders.
 
 ---
 
-## 7. Conclusion
+# Challenges Encountered
 
-This lab provided practical experience in Linux Bash scripting and basic system automation.
+## 1. Incorrect Script Paths
 
-I learned how to navigate the Linux file system, manage files and directories, create executable scripts, implement loops and conditional statements, and automate system resource monitoring.
+I encountered errors caused by entering incorrect file paths and accidentally combining commands.
 
-The system monitoring exercise demonstrated how Bash scripts can reduce repetitive administrative tasks by automatically collecting CPU, memory and disk usage information.
+I resolved these issues by checking the file locations and executing commands separately.
 
-Although I encountered several challenges involving file permissions, script syntax and the Ubuntu environment, I was able to troubleshoot these issues and successfully execute the scripts.
+## 2. Bash Variable Syntax
 
-Overall, this lab strengthened my understanding of Linux administration and provided a foundation for further learning in system automation.
+I encountered a `command not found` error because the date variable was incorrectly assigned.
+
+I corrected it to:
+
+```bash
+now=$(date +"%d_%m_%y_%H_%M")
+```
+
+This helped me understand that Bash variable assignments must not contain spaces around the equals sign.
+
+## 3. Incorrect ZIP File Path
+
+I initially used an incorrect directory path when checking ZIP files.
+
+The corrected command was:
+
+```bash
+ls -lh /home/shoban/*.zip
+```
+
+This reinforced the importance of correct directory paths and wildcard syntax.
+
+## 4. SSH Authentication Problems
+
+My initial SSH connection failed because the VirtualBox Ubuntu machine did not have the required private key.
+
+I generated an SSH key pair and registered the public key with Azure.
+
+I also corrected an SSH command that contained an additional `ssh` argument.
+
+## 5. SSH Public Key Formatting
+
+Azure initially rejected the public key because the manually transcribed key contained incorrect characters.
+
+I verified the original key using:
+
+```bash
+ssh-keygen -lf ~/.ssh/azure_backup_key.pub
+```
+
+After correcting the public key, Azure accepted it.
+
+## 6. Cron Scheduling Verification
+
+Initially, I could not verify automatic execution because the script was scheduled to run only once per hour.
+
+I temporarily changed the schedule to every minute.
+
+After confirming automatic backup creation and cloud transfer, I restored the hourly schedule.
+
+---
+
+# Conclusion
+
+Lab 2b introduced me to basic Linux commands, Bash variables, loops, file management, and script execution.
+
+Lab 3b expanded these skills by introducing automated backups, ZIP compression, cron scheduling, SSH authentication, and SCP cloud transfers.
+
+Through these exercises, I developed a better understanding of how Linux commands can be combined to automate routine administrative tasks.
+
+The final backup system demonstrated how files can be copied, compressed, timestamped, and securely transferred to a remote Azure virtual machine.
+
+The troubleshooting process also reinforced the importance of correct syntax, file permissions, absolute paths, and SSH key management.
