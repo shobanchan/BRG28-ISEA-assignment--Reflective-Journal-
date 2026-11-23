@@ -360,7 +360,7 @@ tail -n 2 /etc/crontab
 
 **Screenshot:**
 
-![Cron Configuration](lab3b_06_cron.png)
+![Cron Configuration](./screenshots/Cron_Configuration.png)
 
 ## Deliverable 7 — Successful Cron Execution
 
