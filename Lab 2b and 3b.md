@@ -326,7 +326,7 @@ The filenames included the date and time, allowing multiple backups to be distin
 
 **Screenshot:**
 
-![Dated ZIP Backup](lab3b_05_zip.png)
+![Dated ZIP Backup](./screenshots/Zip_ls.png)
 
 ## Deliverable 6 — Cron Job Setup
 
