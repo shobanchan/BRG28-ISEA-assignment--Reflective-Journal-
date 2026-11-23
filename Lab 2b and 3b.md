@@ -207,7 +207,7 @@ The `-R` option recursively lists directories and their contents.
 
 **Screenshot:**
 
-![Test Files and Directories](./screenshots/Deliverable%20.png)
+![Test Files and Directories](./screenshots/Deliverable%202.png)
 
 ## Deliverable 3 — Basic Backup Script Working
 
@@ -251,7 +251,7 @@ The test files and School subdirectory were successfully copied.
 
 **Screenshot:**
 
-![Basic Backup Script](./screenshots/back_output.png)
+![Basic Backup Script](./screenshots/testscript.png)
 
 ## Deliverable 4 — Script Moved to /usr/bin
 
