@@ -295,7 +295,7 @@ This verified that MariaDB could process SQL commands and retrieve database info
 
 **Screenshot – MariaDB Database Verification**
 
-![MariaDB Database Verification](./screenshots/.png)
+![MariaDB Database Verification](./screenshots/Showing_databases.png)
 
 ### Step 3 – Exit MariaDB
 
