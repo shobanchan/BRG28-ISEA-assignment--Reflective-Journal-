@@ -295,7 +295,7 @@ This verified that MariaDB could process SQL commands and retrieve database info
 
 **Screenshot – MariaDB Database Verification**
 
-![MariaDB Database Verification](./screenshots/mariadb_databases.png)
+![MariaDB Database Verification](./screenshots/New_database.png)
 
 ### Step 3 – Exit MariaDB
 
@@ -385,11 +385,8 @@ I gained experience using Linux terminal commands to:
 
 ### 9.5 Database Security
 
-I learned the importance of securing a database server by configuring authentication, removing unnecessary accounts, and restricting administrative access.
+I learned the importance of securing a database server by configuring authentication, removing unnecessary accounts, and restricting administrative access which is called ###server hardening
 
-### 9.6 Troubleshooting
-
-I learned how to identify and resolve basic Linux command syntax errors.
 
 ---
 
@@ -401,6 +398,5 @@ The lab helped me understand the relationship between operating systems, virtual
 
 Previously, I had configured Apache as a web server. By installing MariaDB, I learned how a database server provides a different service within a Linux environment.
 
-This exercise improved my understanding of Linux server administration, database management, security configuration, and basic troubleshooting.
 
-**Lab Status:** MariaDB installation, initial security configuration, and database connection verification completed.
+
