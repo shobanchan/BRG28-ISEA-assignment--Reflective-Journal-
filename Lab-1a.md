@@ -102,7 +102,7 @@ Think of VirtualBox as software that allows you to run another computer inside y
 ![General Config](screenshots/General%20Config.png)
 
 ### Screenshot 9: Storage Configuration
-![Storage Config](screenshots/Storage%20Config.png)
+![Storage Config](screenshots/Stroage%20Config.png)
 
 ### Screenshot 10: System Config
 ![System Config](screenshots/System%20Config.png)
