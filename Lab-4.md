@@ -242,7 +242,7 @@ The security configuration provides basic protection, although further security 
 
 **Screenshot – MariaDB Security Configuration**
 
-![MariaDB Security Configuration](./screenshots/mariadb_security.png)
+![MariaDB Security Configuration](./screenshots/Installing_MariaDB2.png)
 
 ---
 
