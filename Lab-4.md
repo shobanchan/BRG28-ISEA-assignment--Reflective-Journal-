@@ -198,7 +198,7 @@ This indicates that the MariaDB service is running.
 
 **Screenshot – MariaDB Service Status**
 
-![MariaDB Service Status](./screenshots/mariadb_status.png)
+![MariaDB Service Status](./screenshots/MariaDB_status.png)
 
 ---
 
