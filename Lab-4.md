@@ -277,7 +277,7 @@ This confirmed that I successfully connected to MariaDB.
 
 **Screenshot – Successful MariaDB Login**
 
-![MariaDB Login](./screenshots/mariadb_login.png)
+![MariaDB Login](./screenshots/MariaDB_login.png)
 
 ### Step 2 – Display Existing Databases
 
