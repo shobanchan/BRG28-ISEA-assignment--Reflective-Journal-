@@ -154,7 +154,7 @@ pwd
 I observed that pwd displayed my current directory as /home/shobanchan, while ls listed the available files and folders. The cd command allowed me to navigate between directories, mkdir was used to create a folder, and touch was used to create an empty text file.
 
 Additional Commands Covered – Linux File System:
-
+```bash
 cd /etc
 pwd
 ls
@@ -166,7 +166,7 @@ ls
 cd ~
 pwd
 
-man ls
+man ls```
 
 I also observed that /home stores personal user files, /etc contains system configuration files, and /var/log commonly stores system and application logs. The man command provides documentation for Linux commands.
 
