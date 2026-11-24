@@ -240,30 +240,6 @@ The final printer recommendation and break-even period will be added after compl
 
 The following screenshots will be included as evidence of the lab.
 
-### Screenshot 1: Printer Specifications and Research
-
-Research into the specifications, toner yields, and operating requirements of both printers.
-
-<!-- Add screenshot after uploading it to GitHub -->
-<!-- ![Printer Specifications](screenshots/printer-specifications.png) -->
-
-### Screenshot 2: Excel TCO Calculations
-
-Excel spreadsheet showing the formulas used to calculate printing volume, toner requirements, electricity costs, and total ownership costs.
-
-<!-- ![Excel TCO Calculations](screenshots/tco-calculations.png) -->
-
-### Screenshot 3: Five-Year TCO Comparison
-
-Completed comparison showing the estimated total cost of owning each printer over five years.
-
-<!-- ![Five-Year TCO Comparison](screenshots/tco-comparison.png) -->
-
-### Screenshot 4: Break-Even Analysis
-
-Excel calculations or chart showing when the accumulated costs of both printers become equal.
-
-<!-- ![Break-Even Analysis](screenshots/break-even-analysis.png) -->
 
 ---
 
