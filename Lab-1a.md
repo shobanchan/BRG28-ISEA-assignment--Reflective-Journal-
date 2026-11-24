@@ -166,7 +166,8 @@ ls
 cd ~
 pwd
 
-man ls```
+man ls
+```
 
 I also observed that /home stores personal user files, /etc contains system configuration files, and /var/log commonly stores system and application logs. The man command provides documentation for Linux commands.
 
